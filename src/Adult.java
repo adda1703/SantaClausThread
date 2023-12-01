@@ -9,8 +9,8 @@ public class Adult extends Thread{
 	
 	@Override
 	public void run() {
-		System.out.println("The adult" + this+ "tells a story");
-		System.out.println("The adult " + this+ "receives a gift ");
-		System.out.println("The adult " + this+ "thanks Santa Claus");
+		System.out.println("The adult " + this.name+ " tells a story");
+		System.out.println("The adult " + this.name + " receives a gift ");
+		System.out.println("The adult " + this.name+ " thanks Santa Claus");
 	}
 }

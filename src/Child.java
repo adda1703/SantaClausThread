@@ -7,6 +7,18 @@ public abstract class Child{
 		this.name=name;
 	}
 	
+	public String getName() {
+		return this.name;
+	}
+	
+	//funzione fondamentale, quando metto .this, esce fuori il nome del bambino
+	//nelle classi che implementano Child; al posto di un numero in esadecimale
+	//toDtring serve per far uscire quello che voglio quando metto this
+	public String toString() {
+		return this.name;
+	}
+	
+	
 	public abstract String getType(); 
 	//viene implementata poi per ogni child
 }

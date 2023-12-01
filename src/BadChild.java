@@ -1,10 +1,10 @@
 
 public class BadChild extends Child implements Runnable {
 	
-	public BadChild(String nome) {
-		super(nome); //prende il nome dalla classe child
-	}
+	public BadChild(String name) {
+		super(name);
 	
+	}
 	@Override
 	public String getType() {
 		return "BadChild"; 
@@ -12,10 +12,10 @@ public class BadChild extends Child implements Runnable {
 	}
 	@Override 
 	public void run() {
-		System.out.println("The child " + this+ "sits Santa Claus' lap");
-		System.out.println("The child " + this+ "asks for a gift");
-		System.out.println("The child " + this+ "doesn't receive the gift");
-		System.out.println("The child " + this+ "cries");
+		System.out.println("The child " + this +  " sits on Santa Claus' lap");
+		System.out.println("The child " + this+ " asks for a gift");
+		System.out.println("The child " + this + " doesn't receive the gift");
+		System.out.println("The child " + this + " cries");
 	}
 	
 
