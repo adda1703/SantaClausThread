@@ -6,7 +6,7 @@ public class XmasMarketSimple {
 			BadChild c1 = new BadChild("Mario");
 			NiceChild c2=new NiceChild("Sergio");
 			NiceChild c3=new NiceChild("Adelina");
-			Elf a1= new Elf("Elena");
+			Elf a1= new Elf("Blue");
 			
 			//Le classi che implementano runnable: devo creare thread
 			//le classi che estendono la classe Thread: è già un thread
