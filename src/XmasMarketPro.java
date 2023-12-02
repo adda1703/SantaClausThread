@@ -16,6 +16,7 @@ public class XmasMarketPro {
 		private final static String[] COLOURS= {"red", "green", "yellow", "pink", "violet", "blue"};
 		//scrivo possibili colori per gli elfi
 		
+		
 		public static void main(String[] args) {
 			
 		Random r=new Random(System.currentTimeMillis());
@@ -24,6 +25,7 @@ public class XmasMarketPro {
 		int n_elfs=r.nextInt(N_E);
 		
 		Thread[] threads_to_start =new Thread[n_children+n_elfs];
+		
 		
 		for(int i=0; i<n_children; i++) {
 			
@@ -54,6 +56,7 @@ public class XmasMarketPro {
 		for(Thread t : threads_to_start) {
 			t.start();
 		}
+	
 		
 		//exception
 		for(Thread t: threads_to_start) {
@@ -67,6 +70,7 @@ public class XmasMarketPro {
 		
 	
 		System.out.println("Market closed");
+		
 		
 		new MarketFrame(); //JAVASWING
 		
