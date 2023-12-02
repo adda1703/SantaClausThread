@@ -49,7 +49,7 @@ public class MarketFrame extends JFrame {
 				
 				//il bottone mi metterà nella text area cosa scrivo nella text field
 				String text_textField = textField.getText();
-				//textArea.append(text_textField +"\n");
+				textArea.append(text_textField +"\n");
 			}
 		});
 		
