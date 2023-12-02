@@ -2,6 +2,8 @@
 import java.util.Random;
 //library for random function
 
+import javax.swing.*;
+
 public class XmasMarketPro {
 
 		private final static int N_SC = 4;
@@ -63,7 +65,10 @@ public class XmasMarketPro {
 				}
 		}
 		
+	
 		System.out.println("Market closed");
+		
+		new MarketFrame(); //JAVASWING
 		
 		
 			
