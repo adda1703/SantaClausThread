@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 public class MarketFrame extends JFrame {
 	
 	private JTextArea textArea; //area di testo
-	private JButton button;
+	private JButton button; 
 	private JTextField textField; //area di testo con una sola riga(tipo di ricerca)
 	
 	//metodo con nome della classe
