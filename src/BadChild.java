@@ -3,8 +3,8 @@ public class BadChild extends Child implements Runnable {
 	
 	public BadChild(String name) {
 		super(name);
-	
 	}
+	
 	@Override
 	public String getType() {
 		return "BadChild"; 
@@ -17,6 +17,4 @@ public class BadChild extends Child implements Runnable {
 		System.out.println("The child " + this + " doesn't receive the gift");
 		System.out.println("The child " + this + " cries");
 	}
-	
-
 }

@@ -17,6 +17,4 @@ public class NiceChild extends Child implements Runnable {
 		System.out.println("The child "+ this+ " receives the gift");
 		System.out.println("Santa Claus says HOHOHO to "+ this);
 	}
-	
-
 }

@@ -6,18 +6,13 @@ import javax.swing.*;
 
 public class XmasMarketPro {
 
-		private final static int N_SC = 4;
-		//numbers of Santa Claus in the market
-		private final static int N_E= 5;
-		//number of max elfs
+		private final static int N_SC = 4; //numbers of Santa Claus in the market
+		private final static int N_E= 5;   //number of max elfs
 		private final static String[] NAMES = {"Elena", "Sergio", "Adelina", "Alessandra",
 				"Mario", "Sofia"};
-		//scrivo  possibili nomi per i clienti
 		private final static String[] COLOURS= {"red", "green", "yellow", "pink", "violet", "blue"};
-		//scrivo possibili colori per gli elfi
 		
-		
-		public static void main(String[] args) {
+		public void marketStart() {
 			
 		Random r=new Random(System.currentTimeMillis());
 		
@@ -38,18 +33,16 @@ public class XmasMarketPro {
 				threads_to_start[i]= new Thread (c);
 			}	else {
 				BadChild c =new BadChild (NAMES[indexName]);
-				threads_to_start[i]= new Thread (c);}	
-				
+				threads_to_start[i]= new Thread (c);}		
 			}
 		
+		
 		for(int i=0; i<n_elfs; i++) {
-			
 			
 			int indexName= r.nextInt(COLOURS.length);
 			
 			Elf e = new Elf(COLOURS[indexName]);
 				threads_to_start[n_children+i]= e;
-		
 		}
 		
 		//faccio partire i thread
@@ -57,7 +50,6 @@ public class XmasMarketPro {
 			t.start();
 		}
 	
-		
 		//exception
 		for(Thread t: threads_to_start) {
 			try {
@@ -68,13 +60,9 @@ public class XmasMarketPro {
 				}
 		}
 		
-	
 		System.out.println("Market closed");
-		
-		
-		new MarketFrame(); //JAVASWING
-		
-		
 			
-		}
-}
+		}	
+	}
+	
+
