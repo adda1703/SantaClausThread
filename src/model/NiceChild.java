@@ -1,4 +1,4 @@
-
+package model;
 public class NiceChild extends Child implements Runnable {
 	
 	public NiceChild(String name) {

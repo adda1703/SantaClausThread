@@ -1,3 +1,4 @@
+package model;
 
 public class BadChild extends Child implements Runnable {
 	

@@ -1,3 +1,5 @@
+package model;
+import view.MarketFrame;
 
 public class Main {
 	

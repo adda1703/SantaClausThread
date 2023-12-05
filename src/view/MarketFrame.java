@@ -1,4 +1,8 @@
+package view;
 import javax.swing.*; //CREAZIONE FRAME
+
+import model.XmasMarketPro;
+
 import java.awt.*; //LAYOUT DEL FRAME
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

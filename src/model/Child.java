@@ -1,3 +1,4 @@
+package model;
 public abstract class Child{
 	
 	private String name;

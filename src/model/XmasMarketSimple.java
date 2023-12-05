@@ -1,4 +1,4 @@
-
+package model;
 public class XmasMarketSimple {
 
 		public static void main(String[] args) {
