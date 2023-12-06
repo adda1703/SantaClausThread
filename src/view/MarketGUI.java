@@ -1,17 +1,18 @@
 package view;
 import javax.swing.*; //CREAZIONE FRAME
 
-import model.XmasMarketPro;
+import model.Threading;
 
 import java.awt.*; //LAYOUT DEL FRAME
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MarketFrame extends JFrame {
+public class MarketGUI extends JFrame {
 	
 	private JButton button; 
 	
-	public MarketFrame() {
+	
+	public MarketGUI() {
 	
 		super("Market"); //il jframe lo creo nel main in XmasMarketPro
 		
@@ -26,13 +27,15 @@ public class MarketFrame extends JFrame {
 		button =new JButton("Open Market"); //testo sul bottone
 		add(button, BorderLayout.CENTER);	//aggiungo button specificando il posto
 		
+		
+		
 		//AGGIUNGO ACTION LISTENERS
 		button.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				
-				XmasMarketPro market=new XmasMarketPro();
+				Threading market=new Threading();
 				market.marketStart();
 			}
 		});

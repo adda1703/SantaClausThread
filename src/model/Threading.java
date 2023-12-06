@@ -5,7 +5,7 @@ import java.util.Random;
 
 import javax.swing.*;
 
-public class XmasMarketPro {
+public class Threading {
 
 		private final static int N_SC = 4; //numbers of Santa Claus in the market
 		private final static int N_E= 5;   //number of max elfs
